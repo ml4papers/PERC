@@ -1,0 +1,426 @@
+
+
+---------------AISTATS: REM  MLA consistency ---------------------------------
+#loss_re 1.,loss_bal 0.6,loss_ce 0.2, loss_cons 0.1, lr 1e-4
+gaussian_noise, 5, 54.98, 0.6
+shot_noise, 5, 56.11, 0.53
+impulse_noise, 5, 54.73, 0.29
+defocus_blur, 5, 69.74, 0.22
+glass_blur, 5, 67.8, 0.35
+motion_blur, 5, 71.8, 0.15
+zoom_blur, 5, 69.42, 0.23
+snow, 5, 65.61, 0.49
+frost, 5, 67.19, 0.29
+fog, 5, 65.53, 0.45
+brightness, 5, 75.04, 0.19
+contrast, 5, 56.88, 0.29
+elastic_transform, 5, 70.67, 0.24
+pixelate, 5, 71.0, 0.19
+jpeg_compression, 5, 68.77, 0.28
+AVG, -, 65.68466666666666, 0.3193333333333334
+
+---------------AISTATS + Diffusion-based De-Corruption--------------------
+gaussian_noise, 5, 54.73, 0.41
+shot_noise, 5, 56.63, 0.45
+impulse_noise, 5, 54.73, 0.14
+defocus_blur, 5, 69.54, 0.42
+glass_blur, 5, 69.38, 0.52
+motion_blur, 5, 71.89, 0.08
+zoom_blur, 5, 69.05, 0.56
+snow, 5, 65.45, 0.32
+frost, 5, 67.68, 0.57
+fog, 5, 65.82, 0.4
+brightness, 5, 75.08, 0.39
+contrast, 5, 57.48, 0.06
+elastic_transform, 5, 70.79, 0.32
+pixelate, 5, 70.75, 0.52
+jpeg_compression, 5, 68.16, 0.37
+AVG, -, 65.81066666666666, 0.3686666666666667
+
+----------------------------AISTATS JS-MLA with corruption-agnostic pre-filter high frequency threshold 0.45---------------------------------
+gaussian_noise, 5, 63.51, 0.28
+shot_noise, 5, 64.36, 0.52
+impulse_noise, 5, 63.27, 0.2
+defocus_blur, 5, 69.09, 0.11
+glass_blur, 5, 68.81, 0.7
+motion_blur, 5, 71.76, 0.24
+zoom_blur, 5, 68.49, 0.29
+snow, 5, 64.6, 0.27
+frost, 5, 66.71, 0.4
+fog, 5, 65.74, 0.46
+brightness, 5, 75.12, 0.38
+contrast, 5, 56.84, 0.3
+elastic_transform, 5, 70.63, 0.42
+pixelate, 5, 70.15, 0.33
+jpeg_compression, 5, 67.68, 0.3
+AVG, -, 67.11733333333333, 0.3466666666666666
+
+----------------------------DUDA threshold 0.45---------------------------------
+defocus_blur, 5, 68.81, 0.26
+glass_blur, 5, 68.37, 0.43
+defocus_blur, 5, 68.53, 0.33
+glass_blur, 5, 68.24, 0.46
+defocus_blur, 5, 68.81, 0.26
+glass_blur, 5, 68.37, 0.43
+motion_blur, 5, 70.59, 0.16
+zoom_blur, 5, 69.13, 0.36
+gaussian_noise, 5, 62.34, 0.5
+shot_noise, 5, 63.55, 0.48
+impulse_noise, 5, 62.54, 0.14
+snow, 5, 64.2, 0.21
+frost, 5, 66.67, 0.45
+fog, 5, 65.17, 0.36
+brightness, 5, 75.12, 0.37
+contrast, 5, 56.35, 0.41
+elastic_transform, 5, 69.94, 0.14
+pixelate, 5, 70.39, 0.25
+jpeg_compression, 5, 68.45, 0.37
+AVG, -, 66.77466666666666, 0.32599999999999996
+defocus_blur, 5, 69.77, 0.17
+defocus_blur, 5, 69.77, 0.17
+gaussian_noise, 5, 62.74, 0.56
+---------------------------ABPEM------------------------------
+gaussian_noise, 5, 57.8, 0.59
+---------------------------DuDaTTA------------------------------
+gaussian_noise, 5, 59.82, 0.39
+---------------------------DuDaTTA without Filter batch size 8------------------------------
+gaussian_noise, 5, 54.81, 0.23
+---------------------------DuDaTTA without Filter batch size 64------------------------------
+gaussian_noise, 5, 53.26, 0.35
+---------------------------DuDaTTA with Filter batch size 64------------------------------
+gaussian_noise, 5, 59.7, 0.37
+---------------------------DuDaTTA with Filter batch size 8 video corruption  1 0.6 0.4 0.2 0.1------------------------------
+gaussian_noise, 5, 61.0, 0.53
+shot_noise, 5, 62.14, 0.39
+impulse_noise, 5, 66.42, 0.5
+defocus_blur, 5, 67.44, 0.18
+glass_blur, 5, 68.16, 0.42
+motion_blur, 5, 69.34, 0.13
+zoom_blur, 5, 68.57, 0.29
+snow, 5, 65.94, 0.23
+frost, 5, 66.91, 0.28
+fog, 5, 65.29, 1.03
+brightness, 5, 74.56, 0.4
+contrast, 5, 54.53, 0.26
+elastic_transform, 5, 70.19, 0.36
+pixelate, 5, 74.31, 0.14
+jpeg_compression, 5, 71.56, 0.29
+AVG, -, 67.09066666666666, 0.36200000000000004
+
+---------------------------DuDaTTA with Filter batch size 8 video corruption  1 0.6 0.4 0.2 0.4------------------------------
+gaussian_noise, 5, 60.56, 0.18
+shot_noise, 5, 61.53, 0.16
+impulse_noise, 5, 66.02, 0.33
+defocus_blur, 5, 67.48, 0.27
+glass_blur, 5, 66.63, 0.14
+---------------------------DuDaTTA with Filter batch size 8 video corruption  1 0.6 0.4 0.2 0.------------------------------
+gaussian_noise, 5, 60.48, 0.36
+
+
+---------------------------DuDaTTA with Filter batch size 8 audio corruption 1 0.6 0.4 0.2 0.4------------------------------
+wind, 5, 70.71, 0.37
+gaussian_noise, 5, 72.82, 0.34
+traffic, 5, 69.78, 0.38
+crowd, 5, 71.48, 0.27
+rain, 5, 70.67, 0.42
+thunder, 5, 73.42, 0.64
+AVG, -, 71.48, 0.4033333333333333
+---------------------------DuDaTTA with Filter batch size 8 audio corruption 1 0.6 0.4 0.2 0.2------------------------------
+
+wind, 5, 70.67, 0.34
+gaussian_noise, 5, 73.42, 0.25
+traffic, 5, 70.47, 0.42
+crowd, 5, 71.56, 0.3
+rain, 5, 70.87, 0.24
+thunder, 5, 73.3, 0.6
+AVG, -, 71.715, 0.35833333333333334
+
+
+---------------------------DuDaTTA with Filter batch size 8 video corruption  1 0.6 0.4 0.2 0.2------------------------------
+gaussian_noise, 5, 61.04, 0.34
+shot_noise, 5, 62.18, 0.26
+impulse_noise, 5, 66.14, 0.38
+defocus_blur, 5, 67.76, 0.35
+glass_blur, 5, 67.6, 0.38
+motion_blur, 5, 69.74, 0.3
+zoom_blur, 5, 68.49, 0.32
+snow, 5, 66.02, 0.23
+frost, 5, 66.67, 0.29
+fog, 5, 65.37, 0.99
+brightness, 5, 74.92, 0.57
+contrast, 5, 54.17, 0.23
+elastic_transform, 5, 69.9, 0.3
+pixelate, 5, 74.47, 0.17
+jpeg_compression, 5, 71.52, 0.33
+AVG, -, 67.06599999999999, 0.3626666666666667
+
+---------------------------DuDaTTA with Filter batch size 64 audio corruption 1 0.6 0.4 0.2 0.2------------------------------
+wind, 5, 71.96, 0.29
+gaussian_noise, 5, 75.48, 0.23
+traffic, 5, 71.0, 0.31
+crowd, 5, 71.44, 0.37
+rain, 5, 72.0, 0.2
+thunder, 5, 72.95, 0.18
+AVG, -, 72.47166666666666, 0.26333333333333336
+
+---------------------------DuDaTTA with Filter batch size 64 video corruption 1 0.6 0.4 0.2 0.2------------------------------
+gaussian_noise, 5, 59.58, 0.25
+shot_noise, 5, 61.67, 0.46
+impulse_noise, 5, 66.05, 0.22
+defocus_blur, 5, 68.56, 0.21
+glass_blur, 5, 67.67, 0.38
+motion_blur, 5, 71.48, 0.21
+zoom_blur, 5, 69.49, 0.24
+snow, 5, 65.94, 0.14
+frost, 5, 67.4, 0.5
+fog, 5, 59.04, 0.25
+brightness, 5, 76.22, 0.41
+contrast, 5, 54.23, 0.39
+elastic_transform, 5, 69.81, 0.28
+pixelate, 5, 76.48, 0.13
+jpeg_compression, 5, 72.84, 0.17
+AVG, -, 67.09733333333334, 0.2826666666666667
+--------------------------DubaTTA without Filter batch size 64 video corruption 1 0.6 0.4 0.2 0.2------------------------------
+gaussian_noise, 5, 52.98, 0.24
+shot_noise, 5, 53.4, 0.3
+impulse_noise, 5, 53.57, 0.38
+defocus_blur, 5, 69.57, 0.18
+glass_blur, 5, 67.83, 0.45
+motion_blur, 5, 72.48, 0.2
+zoom_blur, 5, 70.18, 0.26
+snow, 5, 65.82, 0.34
+frost, 5, 66.22, 0.25
+fog, 5, 62.09, 0.33
+brightness, 5, 76.63, 0.22
+contrast, 5, 55.6, 0.34
+elastic_transform, 5, 70.57, 0.29
+pixelate, 5, 71.8, 0.32
+jpeg_compression, 5, 70.04, 0.29
+AVG, -, 65.252, 0.2926666666666667
+---------------------------ABPEM without Filter batch size 64 video corruption------------------------------
+gaussian_noise, 5, 51.61, 0.25
+shot_noise, 5, 52.12, 0.36
+impulse_noise, 5, 51.67, 0.42
+defocus_blur, 5, 68.72, 0.07
+glass_blur, 5, 66.47, 0.41
+motion_blur, 5, 71.84, 0.14
+zoom_blur, 5, 68.59, 0.23
+snow, 5, 64.42, 0.18
+frost, 5, 65.12, 0.18
+fog, 5, 60.08, 0.28
+brightness, 5, 76.39, 0.11
+contrast, 5, 53.27, 0.28
+elastic_transform, 5, 69.45, 0.34
+pixelate, 5, 71.0, 0.13
+jpeg_compression, 5, 68.92, 0.07
+AVG, -, 63.977999999999994, 0.22999999999999998
+#====================blind deconvolution visual==================================
+gaussian_noise, 5, 49.38, 0.47
+shot_noise, 5, 48.8, 0.23
+impulse_noise, 5, 48.82, 0.28
+defocus_blur, 5, 66.29, 0.22
+glass_blur, 5, 66.12, 0.26
+motion_blur, 5, 68.61, 0.25
+zoom_blur, 5, 68.42, 0.38
+snow, 5, 57.51, 0.27
+frost, 5, 61.41, 0.22
+fog, 5, 64.13, 0.39
+#====================STFT Wiener Filter==========================================
+wind, 5, 71.92, 0.19
+gaussian_noise, 5, 74.2, 0.22
+traffic, 5, 69.99, 0.27
+crowd, 5, 70.32, 0.25
+rain, 5, 71.08, 0.08
+thunder, 5, 72.95, 0.18
+AVG, -, 71.74333333333333, 0.19833333333333333
+#====================Median Filter New==========================================
+wind, 5, 71.33, 0.15
+gaussian_noise, 5, 73.32, 0.28
+traffic, 5, 70.83, 0.59
+crowd, 5, 69.91, 0.15
+rain, 5, 71.71, 0.18
+thunder, 5, 72.95, 0.18
+AVG, -, 71.675, 0.25499999999999995
+#====================No filter==========================================
+wind, 5, 71.96, 0.29
+gaussian_noise, 5, 75.48, 0.23
+traffic, 5, 71.0, 0.31
+crowd, 5, 71.44, 0.37
+rain, 5, 72.0, 0.2
+thunder, 5, 72.95, 0.18
+AVG, -, 72.47166666666666, 0.26333333333333336
+#====================Smooth Filter 0.2==========================================
+wind, 5, 72.4, 0.26
+gaussian_noise, 5, 75.12, 0.23
+traffic, 5, 70.67, 0.3
+crowd, 5, 70.84, 0.19
+rain, 5, 72.05, 0.18
+thunder, 5, 72.95, 0.18
+AVG, -, 72.33833333333332, 0.2233333333333333
+#====================Smooth Filter 0.1==========================================
+wind, 5, 72.16, 0.26
+gaussian_noise, 5, 75.4, 0.21
+traffic, 5, 70.91, 0.33
+crowd, 5, 71.04, 0.24
+rain, 5, 71.96, 0.19
+thunder, 5, 72.95, 0.18
+AVG, -, 72.40333333333332, 0.235
+#====================Spectral Gating Denoise 0.5================================
+
+wind, 5, 68.45, 0.16
+#====================Smooth Filter -0.1==========================================
+wind, 5, 71.84, 0.23
+gaussian_noise, 5, 75.0, 0.12
+traffic, 5, 71.18, 0.29
+crowd, 5, 71.52, 0.34
+rain, 5, 71.99, 0.11
+thunder, 5, 72.95, 0.18
+AVG, -, 72.41333333333334, 0.21166666666666667
+#====================JS-guided Median Filter video=====================================
+brightness, 5, 75.81, 1.76
+contrast, 5, 54.28, 0.34
+elastic_transform, 5, 70.13, 0.23
+pixelate, 5, 74.42, 0.17
+jpeg_compression, 5, 72.06, 0.35
+gaussian_noise, 5, 58.35, 0.19
+shot_noise, 5, 60.59, 0.55
+impulse_noise, 5, 60.85, 0.28
+defocus_blur, 5, 68.93, 0.15
+glass_blur, 5, 67.59, 0.43
+motion_blur, 5, 71.84, 0.15
+zoom_blur, 5, 69.62, 0.2
+snow, 5, 66.06, 0.19
+frost, 5, 67.04, 0.39
+fog, 5, 60.14, 0.34
+AVG, -, 66.51400000000001, 0.38133333333333336
+#====================JS-guided Median Filter audio=====================================
+wind, 5, 71.56, 0.06
+gaussian_noise, 5, 74.8, 0.18
+traffic, 5, 70.59, 0.42
+crowd, 5, 70.04, 0.18
+rain, 5, 72.16, 0.23
+thunder, 5, 73.6, 0.34
+AVG, -, 72.125, 0.235
+#============================spectral_subtract_filter=================================
+wind, 5, 71.36, 0.2
+gaussian_noise, 5, 71.52, 0.24
+traffic, 5, 70.74, 0.2
+crowd, 5, 70.29, 0.16
+rain, 5, 69.74, 0.08
+thunder, 5, 72.95, 0.18
+AVG, -, 71.10000000000001, 0.17666666666666667
+#==============================wiener_filter_audio 0.98=========================================
+wind, 5, 72.0, 0.31
+gaussian_noise, 5, 75.32, 0.22
+traffic, 5, 70.88, 0.31
+crowd, 5, 71.36, 0.36
+rain, 5, 71.97, 0.23
+thunder, 5, 72.95, 0.18
+AVG, -, 72.41333333333333, 0.26833333333333337
+#==============================wiener_filter_audio 0.95=========================================
+
+wind, 5, 71.92, 0.25
+gaussian_noise, 5, 75.12, 0.2
+traffic, 5, 70.92, 0.38
+crowd, 5, 71.32, 0.32
+rain, 5, 71.8, 0.14
+thunder, 5, 72.95, 0.18
+AVG, -, 72.33833333333334, 0.245
+---------------------------DuBaTTA with new filter 20250929-----------------------------
+gaussian_noise, 5, 59.58, 0.24
+shot_noise, 5, 61.55, 0.45
+impulse_noise, 5, 66.01, 0.23
+brightness, 5, 75.37, 2.34
+contrast, 5, 54.23, 0.39
+elastic_transform, 5, 69.81, 0.28
+pixelate, 5, 76.48, 0.13
+jpeg_compression, 5, 72.84, 0.17
+defocus_blur, 5, 68.56, 0.21
+---------------------------DuBaTTA with batchwise corruption detection and new filter 20250929-----------------------------
+gaussian_noise, 5, 58.72, 0.27
+shot_noise, 5, 60.46, 0.42
+impulse_noise, 5, 64.32, 0.28
+defocus_blur, 5, 69.07, 0.23
+glass_blur, 5, 67.71, 0.26
+motion_blur, 5, 71.48, 0.19
+zoom_blur, 5, 69.7, 0.2
+snow, 5, 65.94, 0.14
+frost, 5, 67.22, 0.22
+fog, 5, 59.08, 0.27
+======================================================================================================================================
+gaussian_noise, 5, 60.98, 0.3
+shot_noise, 5, 62.38, 0.26
+impulse_noise, 5, 66.81, 0.23
+defocus_blur, 5, 68.12, 0.25
+glass_blur, 5, 68.47, 0.4
+motion_blur, 5, 70.44, 0.32
+zoom_blur, 5, 68.58, 0.19
+snow, 5, 65.24, 0.19
+frost, 5, 67.11, 0.21
+fog, 5, 55.93, 0.36
+gaussian_noise, 5, 60.45, 0.19
+shot_noise, 5, 61.37, 0.24
+impulse_noise, 5, 60.4, 0.32
+defocus_blur, 5, 68.39, 0.16
+glass_blur, 5, 67.79, 0.06
+motion_blur, 5, 70.38, 0.19
+zoom_blur, 5, 67.82, 0.19
+snow, 5, 65.94, 0.12
+frost, 5, 66.82, 0.12
+fog, 5, 59.18, 0.35
+brightness, 5, 71.98, 1.41
+contrast, 5, 54.35, 0.77
+elastic_transform, 5, 71.39, 0.44
+pixelate, 5, 76.73, 0.23
+jpeg_compression, 5, 73.24, 0.2
+AVG, -, 66.41533333333332, 0.33266666666666667
+gaussian_noise, 5, 60.45, 0.18
+shot_noise, 5, 61.37, 0.24
+impulse_noise, 5, 60.48, 0.39
+gaussian_noise, 5, 52.83, 0.23
+shot_noise, 5, 53.37, 0.26
+impulse_noise, 5, 52.96, 0.13
+defocus_blur, 5, 70.19, 0.22
+glass_blur, 5, 67.67, 0.2
+motion_blur, 5, 72.28, 0.25
+zoom_blur, 5, 70.12, 0.1
+snow, 5, 65.49, 0.21
+frost, 5, 66.45, 0.36
+fog, 5, 62.19, 0.31
+gaussian_noise, 5, 60.98, 0.3
+shot_noise, 5, 62.42, 0.26
+impulse_noise, 5, 66.81, 0.23
+defocus_blur, 5, 68.24, 0.26
+glass_blur, 5, 66.61, 0.14
+motion_blur, 5, 71.03, 0.43
+zoom_blur, 5, 69.08, 0.18
+snow, 5, 62.35, 0.52
+frost, 5, 64.76, 0.39
+gaussian_noise, 5, 58.42, 0.42
+====================================KS50 visual corruption new filter 20251004======================================
+contrast, 5, 65.82, 0.07
+gaussian_noise, 5, 60.98, 0.3
+shot_noise, 5, 62.34, 0.23
+impulse_noise, 5, 66.81, 0.23
+fog, 5, 62.19, 0.29
+defocus_blur, 5, 70.03, 0.17
+glass_blur, 5, 67.51, 0.2
+motion_blur, 5, 72.2, 0.23
+zoom_blur, 5, 70.12, 0.12
+snow, 5, 65.53, 0.2
+frost, 5, 66.26, 0.24
+brightness, 5, 76.4, 0.19
+elastic_transform, 5, 70.99, 0.37
+pixelate, 5, 71.86, 0.45
+jpeg_compression, 5, 69.96, 0.3
+AVG, -, 67.93333333333334, 0.23933333333333334
+======================================KS50 audio corruption new filter 20251004==========================================
+wind, 5, 71.77, 0.26
+gaussian_noise, 5, 75.39, 0.17
+traffic, 5, 70.79, 0.13
+crowd, 5, 71.31, 0.2
+rain, 5, 71.99, 0.19
+thunder, 5, 74.0, 0.27
+AVG, -, 72.54166666666667, 0.20333333333333334
+======================================VGG visual corruption new filter 20251004==========================================
+fog, 5, 62.19, 0.29

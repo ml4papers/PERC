@@ -1,0 +1,7 @@
+gaussian_noise, 5, 52.6, 0.0
+shot_noise, 5, 53.3, 0.0
+impulse_noise, 5, 52.71, 0.0
+contrast, 5, 65.68, 0.0
+defocus_blur, 5, 69.31, 0.0
+glass_blur, 5, 66.89, 0.0
+motion_blur, 5, 71.66, 0.0

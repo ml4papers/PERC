@@ -1,0 +1,26 @@
+corr=('defocus_blur'
+     'glass_blur'
+     'motion_blur'
+     'zoom_blur'
+     'gaussian_noise'
+     'shot_noise'
+     'impulse_noise'
+     'snow'
+     'frost'
+     'fog'
+     'brightness'
+     'contrast'
+     'elastic_transform'
+     'pixelate'
+     'jpeg_compression')
+for c in ${corr[@]}
+do
+   python ./make_corruptions/make_c_video.py --corruption $c --severity 1 --data_path 'data_path/Kinetics50/image_mulframe_val256_k=50' --save_path 'data_path/Kinetics50/image_mulframe_val256_k=50-C'
+   python ./make_corruptions/make_c_video.py --corruption $c --severity 2 --data_path 'data_path/Kinetics50/image_mulframe_val256_k=50' --save_path 'data_path/Kinetics50/image_mulframe_val256_k=50-C'
+   python ./make_corruptions/make_c_video.py --corruption $c --severity 3 --data_path 'data_path/Kinetics50/image_mulframe_val256_k=50' --save_path 'data_path/Kinetics50/image_mulframe_val256_k=50-C'
+   python ./make_corruptions/make_c_video.py --corruption $c --severity 4 --data_path 'data_path/Kinetics50/image_mulframe_val256_k=50' --save_path 'data_path/Kinetics50/image_mulframe_val256_k=50-C'
+done
+#python ./make_corruptions/make_c_audio.py --corruption 'all' --severity 5 --data_path 'data_path/Kinetics50/audio_val256_k=50' --save_path 'data_path/Kinetics50/audio_val256_k=50-C' --weather_path 'data_path/NoisyAudios'
+#python ./make_corruptions/make_c_video.py --corruption 'frost' --severity 5 --data_path 'data_path/Kinetics50/image_mulframe_val256_k=50' --save_path 'data_path/Kinetics50/image_mulframe_val256_k=50-C'
+#python ./make_corruptions/make_c_video.py --corruption 'glass_blur' --severity 5 --data_path 'data_path/VGGSound/image_mulframe_test' --save_path 'data_path/VGGSound/image_mulframe_test-C'
+#python ./make_corruptions/make_c_audio.py --corruption 'all' --severity 5 --data_path 'data_path/VGGSound/audio_test' --save_path 'data_path/VGGSound/audio_test-C' --weather_path 'data_path/NoisyAudios'

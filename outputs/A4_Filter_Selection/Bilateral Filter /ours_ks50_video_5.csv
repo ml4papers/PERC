@@ -1,0 +1,5 @@
+gaussian_noise-5, mean: 52.68, std: 0.0
+shot_noise, 5, 53.43, 0.0
+impulse_noise, 5, 52.62, 0.0
+contrast, 5, 65.68, 0.0
+defocus_blur, 5, 69.31, 0.0

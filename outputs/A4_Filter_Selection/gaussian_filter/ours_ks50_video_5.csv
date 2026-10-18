@@ -1,0 +1,4 @@
+gaussian_noise, 5, 61.24, 0.0
+shot_noise, 5, 62.75, 0.0
+impulse_noise, 5, 61.22, 0.0
+

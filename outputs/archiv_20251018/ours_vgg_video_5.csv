@@ -1,0 +1,90 @@
+
+gaussian_noise, 5, 54.04, 0.09
+shot_noise, 5, 53.95, 0.11
+impulse_noise, 5, 55.31, 0.19
+fog, 5, 56.93, 0.15
+defocus_blur, 5, 56.84, 0.15
+glass_blur, 5, 57.16, 0.13
+motion_blur, 5, 58.14, 0.05
+zoom_blur, 5, 57.48, 0.11
+snow, 5, 56.33, 0.17
+frost, 5, 56.87, 0.11
+contrast, 5, 55.37, 0.12
+brightness, 5, 58.9, 0.14
+elastic_transform, 5, 57.79, 0.13
+lma 1.0 53.06 0.1 53.33 0 54.08
+1 0.8 0.2 0 53.6
+1 0.6 0.2 0 54.08
+1 0.4 0.2 0 54.06
+1 0.4 0.5 0 53.59
+1 0.2 0.2 0 53.51
+================vgg video corruption --ent-weight 1. --bal-weight 0.6 --ce-weight 0.2 --cons-weight 0.=======================
+gaussian_noise, 5, 56.12, 0.11
+glass_blur, 5, 57.87, 0.09
+fog, 5, 57.46, 0.05
+shot_noise, 5, 56.29, 0.13
+impulse_noise, 5, 57.53, 0.14
+defocus_blur, 5, 57.64, 0.03
+motion_blur, 5, 58.97, 0.07
+zoom_blur, 5, 58.5, 0.12
+snow, 5, 57.14, 0.12
+frost, 5, 58.05, 0.1
+brightness, 5, 60.0, 0.13
+contrast, 5, 56.88, 0.16
+elastic_transform, 5, 58.95, 0.15
+pixelate, 5, 57.59, 0.17
+jpeg_compression, 5, 58.41, 0.11
+AVG, -, 57.82666666666667, 0.11199999999999997
+================vgg video corruption --ent-weight 1. --bal-weight 0.6 --ce-weight 0.2 --cons-weight 0.2=======================
+gaussian_noise, 5, 55.13, 0.14
+glass_blur, 5, 57.68, 0.1
+fog, 5, 57.17, 0.07
+shot_noise, 5, 55.41, 0.17
+impulse_noise, 5, 56.44, 0.13
+defocus_blur, 5, 57.38, 0.14
+motion_blur, 5, 58.77, 0.09
+zoom_blur, 5, 57.93, 0.03
+snow, 5, 56.79, 0.11
+frost, 5, 57.58, 0.13
+brightness, 5, 59.45, 0.09
+contrast, 5, 55.98, 0.16
+elastic_transform, 5, 58.19, 0.08
+pixelate, 5, 57.16, 0.1
+jpeg_compression, 5, 57.8, 0.07
+AVG, -, 57.257333333333335, 0.10733333333333335
+==========================vgg video corruption --ent-weight 1. --bal-weight 0.6 --ce-weight 0.2 --cons-weight 0.1====================
+
+gaussian_noise, 5, 55.81, 0.14
+glass_blur, 5, 57.83, 0.11
+fog, 5, 57.48, 0.06
+shot_noise, 5, 55.83, 0.18
+impulse_noise, 5, 56.96, 0.12
+defocus_blur, 5, 57.54, 0.04
+motion_blur, 5, 58.97, 0.12
+zoom_blur, 5, 58.15, 0.03
+snow, 5, 57.05, 0.12
+frost, 5, 57.95, 0.17
+brightness, 5, 59.64, 0.07
+contrast, 5, 56.39, 0.14
+elastic_transform, 5, 58.46, 0.07
+pixelate, 5, 57.43, 0.15
+jpeg_compression, 5, 58.11, 0.1
+AVG, -, 57.57333333333334, 0.10800000000000003
+=====================================sensitivity study=====================================================================
+--ent-weight 1. --bal-weight 0.8 --ce-weight 0.4 --cons-weight 0.2
+gaussian_noise, 5, 56.16, 0.19
+glass_blur, 5, 58.35, 0.21
+shot_noise, 5, 56.07, 0.13
+impulse_noise, 5, 57.1, 0.09
+defocus_blur, 5, 57.91, 0.08
+motion_blur, 5, 59.27, 0.12
+zoom_blur, 5, 58.68, 0.06
+snow, 5, 57.3, 0.08
+frost, 5, 58.2, 0.14
+fog, 5, 57.82, 0.1
+contrast, 5, 56.79, 0.18
+brightness, 5, 60.0, 0.1
+elastic_transform, 5, 58.95, 0.19
+pixelate, 5, 57.79, 0.19
+jpeg_compression, 5, 58.47, 0.12
+AVG, -, 57.92400000000001, 0.132

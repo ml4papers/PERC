@@ -1,0 +1,186 @@
+wind, 5, 35.38, 0.06
+gaussian_noise, 5, 41.72, 0.16
+traffic, 5, 35.25, 0.12
+crowd, 5, 35.81, 0.22
+rain, 5, 34.1, 0.09
+thunder, 5, 42.42, 0.19
+avg 5, 37.44, 0.20
+=======================sensitivity study==========================================
+--ent-weight 1. --bal-weight 0. --ce-weight 0.2 --cons-weight 0.4
+thunder, 5, 21.85, 1.1
+wind, 5, 3.46, 0.36
+gaussian_noise, 5, 7.09, 0.8
+traffic, 5, 3.41, 0.19
+crowd, 5, 5.53, 0.65
+rain, 5, 2.7, 0.17
+avg, 5, 7.34, 0.55
+--ent-weight 1. --bal-weight 0.2 --ce-weight 0.2 --cons-weight 0.4
+thunder, 5, 42.04, 0.13
+wind, 5, 34.7, 0.08
+gaussian_noise, 5, 41.64, 0.18
+traffic, 5, 34.53, 0.1
+crowd, 5, 35.44, 0.12
+rain, 5, 33.26, 0.1
+AVG, -, 36.935, 0.11833333333333333
+--ent-weight 1. --bal-weight 0.4 --ce-weight 0.2 --cons-weight 0.4
+thunder, 5, 42.42, 0.18
+wind, 5, 35.32, 0.12
+gaussian_noise, 5, 41.83, 0.18
+traffic, 5, 35.4, 0.18
+crowd, 5, 35.76, 0.11
+rain, 5, 34.03, 0.11
+AVG, -, 37.46, 0.14666666666666664
+--ent-weight 1. --bal-weight 0.6--ce-weight 0.2 --cons-weight 0.4
+thunder, 5, 42.25, 0.22
+wind, 5, 35.48, 0.12
+gaussian_noise, 5, 41.49, 0.19
+traffic, 5, 35.09, 0.05
+crowd, 5, 35.63, 0.18
+rain, 5, 34.18, 0.15
+AVG, -, 37.35333333333333, 0.15166666666666667
+#--ent-weight 1. --bal-weight 0.8 --ce-weight 0.2 --cons-weight 0.4
+thunder, 5, 42.47, 0.27
+wind, 5, 35.47, 0.13
+gaussian_noise, 5, 41.54, 0.15
+traffic, 5, 35.26, 0.1
+crowd, 5, 35.86, 0.21
+rain, 5, 34.13, 0.08
+AVG, -, 37.45499999999999, 0.15666666666666665
+--ent-weight 1. --bal-weight 1.0--ce-weight 0.2 --cons-weight 0.4
+thunder, 5, 37.67, 0.15
+wind, 5, 31.22, 0.16
+gaussian_noise, 5, 39.05, 0.33
+traffic, 5, 31.98, 0.19
+crowd, 5, 32.0, 0.13
+rain, 5, 30.5, 0.08
+AVG, -, 33.736666666666665, 0.17333333333333334
+#--ent-weight 1. --bal-weight 0.8 --ce-weight 0. --cons-weight 0.4
+thunder, 5, 42.84, 0.16
+wind, 5, 36.3, 0.13
+gaussian_noise, 5, 42.41, 0.18
+traffic, 5, 35.83, 0.16
+crowd, 5, 36.17, 0.22
+rain, 5, 34.63, 0.21
+AVG, -, 38.03, 0.17666666666666667
+#--ent-weight 1. --bal-weight 0.8 --ce-weight 0.2 --cons-weight 0.4
+thunder, 5, 42.47, 0.27
+wind, 5, 35.47, 0.13
+gaussian_noise, 5, 41.54, 0.15
+#--ent-weight 0.8 --bal-weight 0.8 --ce-weight 0. --cons-weight 0.4
+thunder, 5, 38.28, 0.13
+wind, 5, 31.63, 0.1
+gaussian_noise, 5, 39.37, 0.31
+traffic, 5, 32.43, 0.16
+crowd, 5, 32.48, 0.12
+rain, 5, 31.11, 0.11
+AVG, -, 34.21666666666667, 0.155
+#--ent-weight 1. --bal-weight 0.8 --ce-weight 0.2 --cons-weight 0.4
+thunder, 5, 42.47, 0.27
+wind, 5, 35.47, 0.13
+gaussian_noise, 5, 41.54, 0.15
+traffic, 5, 35.26, 0.1
+crowd, 5, 35.86, 0.21
+rain, 5, 34.13, 0.08
+AVG, -, 37.45499999999999, 0.15666666666666665
+#--ent-weight 1. --bal-weight 0.8 --ce-weight 0.4 --cons-weight 0.4
+thunder, 5, 42.84, 0.16
+wind, 5, 36.3, 0.13
+gaussian_noise, 5, 42.41, 0.18
+traffic, 5, 35.83, 0.16
+crowd, 5, 36.17, 0.22
+rain, 5, 34.63, 0.21
+AVG, -, 38.03, 0.17666666666666667
+--ent-weight 1. --bal-weight 0.8 --ce-weight 0.6 --cons-weight 0.4
+thunder, 5, 42.96, 0.2
+wind, 5, 36.09, 0.08
+gaussian_noise, 5, 42.59, 0.18
+traffic, 5, 35.63, 0.17
+crowd, 5, 35.79, 0.2
+rain, 5, 34.41, 0.11
+AVG, -, 37.91166666666667, 0.15666666666666668
+--ent-weight 1. --bal-weight 0.8 --ce-weight 0.8 --cons-weight 0.4
+thunder, 5, 42.38, 0.19
+wind, 5, 35.67, 0.16
+gaussian_noise, 5, 42.43, 0.23
+traffic, 5, 35.13, 0.13
+crowd, 5, 35.2, 0.12
+rain, 5, 33.94, 0.09
+AVG, -, 37.458333333333336, 0.15333333333333332
+--ent-weight 1. --bal-weight 0.8 --ce-weight 1.0 --cons-weight 0.4
+thunder, 5, 41.75, 0.16
+--ent-weight 1. --bal-weight 0.8 --ce-weight 0.4 --cons-weight 0.0
+thunder, 5, 42.72, 0.23
+wind, 5, 36.16, 0.15
+gaussian_noise, 5, 42.23, 0.17
+traffic, 5, 35.25, 0.2
+crowd, 5, 35.42, 0.08
+rain, 5, 34.35, 0.17
+AVG, -, 37.688333333333325, 0.16666666666666666
+--ent-weight 1. --bal-weight 0.8 --ce-weight 0.4 --cons-weight 0.2
+thunder, 5, 43.11, 0.27
+wind, 5, 36.4, 0.09
+gaussian_noise, 5, 42.47, 0.12
+traffic, 5, 36.06, 0.25
+crowd, 5, 35.89, 0.16
+rain, 5, 34.59, 0.15
+AVG, -, 38.086666666666666, 0.17333333333333334
+#--ent-weight 1. --bal-weight 0.8 --ce-weight 0.4 --cons-weight 0.4
+thunder, 5, 42.84, 0.16
+wind, 5, 36.3, 0.13
+gaussian_noise, 5, 42.41, 0.18
+traffic, 5, 35.83, 0.16
+crowd, 5, 36.17, 0.22
+rain, 5, 34.63, 0.21
+AVG, -, 38.03, 0.17666666666666667
+--ent-weight 1. --bal-weight 0.8 --ce-weight 0.4 --cons-weight 0.6
+thunder, 5, 42.87, 0.23
+wind, 5, 35.81, 0.08
+gaussian_noise, 5, 42.12, 0.1
+traffic, 5, 35.79, 0.22
+crowd, 5, 36.01, 0.13
+rain, 5, 34.42, 0.14
+AVG, -, 37.836666666666666, 0.15
+--ent-weight 1. --bal-weight 0.8 --ce-weight 0.4 --cons-weight 0.8
+thunder, 5, 42.4, 0.13
+wind, 5, 35.56, 0.11
+gaussian_noise, 5, 41.88, 0.14
+traffic, 5, 35.53, 0.23
+crowd, 5, 35.93, 0.16
+rain, 5, 34.17, 0.16
+AVG, -, 37.57833333333334, 0.155
+--ent-weight 1. --bal-weight 0.8 --ce-weight 0.4 --cons-weight 1.0
+thunder, 5, 42.23, 0.18
+wind, 5, 35.23, 0.13
+gaussian_noise, 5, 41.66, 0.2
+traffic, 5, 35.25, 0.22
+crowd, 5, 35.71, 0.18
+rain, 5, 33.81, 0.12
+AVG, -, 37.315000000000005, 0.17166666666666663
+--ent-weight 1. --bal-weight 0.8 --ce-weight 0.2--cons-weight 0.2
+thunder, 5, 42.67, 0.25
+wind, 5, 36.04, 0.15
+gaussian_noise, 5, 41.8, 0.11
+traffic, 5, 35.5, 0.11
+crowd, 5, 35.74, 0.13
+rain, 5, 34.6, 0.19
+AVG, -, 37.725, 0.15666666666666665
+--ent-weight 1. --bal-weight 0.8 --ce-weight 0.6--cons-weight 0.2
+thunder, 5, 42.64, 0.23
+--ent-weight 1. --bal-weight 0.8 --ce-weight 0.5--cons-weight 0.2
+thunder, 5, 42.9, 0.22
+--ent-weight 1. --bal-weight 0.8 --ce-weight 0.6--cons-weight 0.3
+thunder, 5, 42.84, 0.21
+--ent-weight 1. --bal-weight 0.8 --ce-weight 0.4 --cons-weight 0.3
+thunder, 5, 43.06, 0.24
+wind, 5, 36.28, 0.09
+gaussian_noise, 5, 42.49, 0.14
+traffic, 5, 36.01, 0.2
+crowd, 5, 36.05, 0.12
+rain, 5, 34.59, 0.13
+AVG, -, 38.08, 0.15333333333333332
+--ent-weight 1. --bal-weight 0.7 --ce-weight 0.4 --cons-weight 0.3
+thunder, 5, 42.94, 0.16
+wind, 5, 36.22, 0.06
+--ent-weight 1. --bal-weight 0.7 --ce-weight 0.4 --cons-weight 0.2
+thunder, 5, 43.03, 0.27
+wind, 5, 36.36, 0.11

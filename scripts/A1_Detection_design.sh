@@ -1,0 +1,30 @@
+
+#python run_read.py --dataset 'vggsound' --json-root './json_csv_files/vgg' --label-csv './json_csv_files/class_labels_indices_vgg.csv' --pretrain_path './data_path/vgg_65.5.pth' --tta-method 'ABPEM' --severity-start 5 --severity-end 5 --corruption-modality 'audio' --gpu 0 --output-csv './outputs/ours_vgg_audio_5.csv' --lr 1e-4 --batch-size 64 --use-cache --cache-size 64 --ent-weight 1. --bal-weight 0.8 --ce-weight 0.4 --cons-weight 0.2
+python run_read.py --dataset 'vggsound' --json-root './json_csv_files/vgg' --label-csv './json_csv_files/class_labels_indices_vgg.csv' --pretrain_path './data_path/vgg_65.5.pth' --tta-method 'ABPEM' --severity-start 5 --severity-end 5 --corruption-modality 'video' --gpu 0 --output-csv './outputs/ours_vgg_video_5.csv' --lr 1e-4 --batch-size 64 --use-cache --cache-size 64 --ent-weight 1. --bal-weight 0.5 --ce-weight 0.4 --cons-weight 0.0
+python run_read.py --dataset 'ks50' --json-root './json_csv_files/ks50' --label-csv './json_csv_files/class_labels_indices_ks50.csv' --pretrain_path './data_path/cav_mae_ks50.pth' --tta-method 'ABPEM' --severity-start 5 --severity-end 5 --corruption-modality 'audio' --gpu 0 --output-csv './outputs/ours_ks50_audio_5.csv'  --lr 1e-4 --batch-size 64 --use-cache --cache-size 64 --ent-weight 1. --bal-weight 1.0 --ce-weight 0.2 --cons-weight 0.
+
+#python run_read.py --dataset 'ks50' --json-root './json_csv_files/ks50' --label-csv './json_csv_files/class_labels_indices_ks50.csv' --pretrain_path './data_path/cav_mae_ks50.pth' --tta-method 'ABPEM' --severity-start 5 --severity-end 5 --corruption-modality 'video' --gpu 0 --output-csv './outputs/ours_ks50_video_5.csv' --lr 1e-4 --batch-size 64 --use-cache --cache-size 64 --ent-weight 1. --bal-weight 0.8 --ce-weight 0.2 --cons-weight 0.2
+
+
+##python run_read.py --dataset 'ks50' --json-root './json_csv_files/ks50' --label-csv './json_csv_files/class_labels_indices_ks50.csv' --pretrain_path './data_path/cav_mae_ks50.pth' --tta-method 'ABPEM' --severity-start 5 --severity-end 5 --corruption-modality 'audio' --gpu 0 --output-csv './outputs/ours_ks50_audio_5.csv' --ent-weight 0. --bal-weight 0.0 --ce-weight 0. --cons-weight 0. --lr 1e-4 --batch-size 64 --use-cache --cache-size 64
+##python run_read.py --dataset 'ks50' --json-root './json_csv_files/ks50' --label-csv './json_csv_files/class_labels_indices_ks50.csv' --pretrain_path './data_path/cav_mae_ks50.pth' --tta-method 'ABPEM' --severity-start 5 --severity-end 5 --corruption-modality 'audio' --gpu 0 --output-csv './outputs/ours_ks50_audio_5.csv' --ent-weight 1. --bal-weight 0.0 --ce-weight 0. --cons-weight 0. --lr 1e-4 --batch-size 64 --use-cache --cache-size 64
+#python run_read.py --dataset 'ks50' --json-root './json_csv_files/ks50' --label-csv './json_csv_files/class_labels_indices_ks50.csv' --pretrain_path './data_path/cav_mae_ks50.pth' --tta-method 'ABPEM' --severity-start 5 --severity-end 5 --corruption-modality 'audio' --gpu 0 --output-csv './outputs/ours_ks50_audio_5.csv' --ent-weight 1. --bal-weight 0.0 --ce-weight 0.2 --cons-weight 0. --lr 1e-4 --batch-size 64 --use-cache --cache-size 64
+##python run_read.py --dataset 'ks50' --json-root './json_csv_files/ks50' --label-csv './json_csv_files/class_labels_indices_ks50.csv' --pretrain_path './data_path/cav_mae_ks50.pth' --tta-method 'ABPEM' --severity-start 5 --severity-end 5 --corruption-modality 'audio' --gpu 0 --output-csv './outputs/ours_ks50_audio_5.csv' --ent-weight 1. --bal-weight 1.0 --ce-weight 0.2 --cons-weight 0. --lr 1e-4 --batch-size 64 --use-cache --cache-size 64
+#
+##python run_read.py --dataset 'vggsound' --json-root './json_csv_files/vgg' --label-csv './json_csv_files/class_labels_indices_vgg.csv' --pretrain_path './data_path/vgg_65.5.pth' --tta-method 'ABPEM' --severity-start 5 --severity-end 5 --corruption-modality 'video' --gpu 0 --output-csv './outputs/ours_vgg_video_5.csv' --lr 1e-4 --batch-size 64 --use-cache --cache-size 64 --ent-weight 0. --bal-weight 0. --ce-weight 0. --cons-weight 0.0
+##python run_read.py --dataset 'vggsound' --json-root './json_csv_files/vgg' --label-csv './json_csv_files/class_labels_indices_vgg.csv' --pretrain_path './data_path/vgg_65.5.pth' --tta-method 'ABPEM' --severity-start 5 --severity-end 5 --corruption-modality 'video' --gpu 0 --output-csv './outputs/ours_vgg_video_5.csv' --lr 1e-4 --batch-size 64 --use-cache --cache-size 64 --ent-weight 1. --bal-weight 0. --ce-weight 0. --cons-weight 0.0
+#python run_read.py --dataset 'vggsound' --json-root './json_csv_files/vgg' --label-csv './json_csv_files/class_labels_indices_vgg.csv' --pretrain_path './data_path/vgg_65.5.pth' --tta-method 'ABPEM' --severity-start 5 --severity-end 5 --corruption-modality 'video' --gpu 0 --output-csv './outputs/ours_vgg_video_5.csv' --lr 1e-4 --batch-size 64 --use-cache --cache-size 64 --ent-weight 1. --bal-weight 0. --ce-weight 0.4 --cons-weight 0.0
+##python run_read.py --dataset 'vggsound' --json-root './json_csv_files/vgg' --label-csv './json_csv_files/class_labels_indices_vgg.csv' --pretrain_path './data_path/vgg_65.5.pth' --tta-method 'ABPEM' --severity-start 5 --severity-end 5 --corruption-modality 'video' --gpu 0 --output-csv './outputs/ours_vgg_video_5.csv' --lr 1e-4 --batch-size 64 --use-cache --cache-size 64 --ent-weight 1. --bal-weight 0. --ce-weight 0.4 --cons-weight 0.0
+##python run_read.py --dataset 'vggsound' --json-root './json_csv_files/vgg' --label-csv './json_csv_files/class_labels_indices_vgg.csv' --pretrain_path './data_path/vgg_65.5.pth' --tta-method 'ABPEM' --severity-start 5 --severity-end 5 --corruption-modality 'video' --gpu 0 --output-csv './outputs/ours_vgg_video_5.csv' --lr 1e-4 --batch-size 64 --use-cache --cache-size 64 --ent-weight 1. --bal-weight 0.5 --ce-weight 0.4 --cons-weight 0.0
+
+
+
+
+
+
+
+
+
+
+
+
